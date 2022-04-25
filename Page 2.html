@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+  <link
+    rel="icon"
+    href="./assets/logo.ico
+  "
+  />
+</head>
+<title>Business Plan</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+  }
+  .page {
+    margin: 0;
+    font-family: "Circular Std", sans-serif;
+    height: 100vh;
+    background-image: url(./assets/background-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .page-style {
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background-color: #2798c4de;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+  .header {
+    margin: 0px;
+    background-color: #011459;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  .subheader {
+    background-color: white;
+    position: sticky;
+    top: 130px;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    font-family: "Circular Std Black";
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  /* APPBAR MENU */
+  nav {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  ul {
+    background: transparent;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  li {
+    color: #fff;
+    background: transparent;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    width: 120px;
+  }
+
+  li a {
+    color: #fff7f1;
+  }
+
+  li:hover,
+  li:focus-within {
+    background: #2798c4de;
+    cursor: pointer;
+  }
+
+  li:focus-within a {
+    outline: none;
+  }
+
+  ul li ul {
+    background: #2b292b;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 100%;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    width: 100%;
+  }
+
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>
+<body>
+  <div class="page">
+    <div class="page-style">
+      <div class="header">
+        <div style="display: flex">
+          <a href="index.html"
+            ><img
+              src="./assets/logo.png"
+              alt="D.I.C.K.S Pro"
+              style="width: 70px; height: 70px"
+            />
+          </a>
+          <div>
+            <a href="index.html">
+              <h1>D.I.C.K.S Pro</h1>
+              <h2>DIGITAL INFORMATION AND COMPUTER KNOWLEDGE SERVICE PRO</h2>
+            </a>
+          </div>
+        </div>
+        <span style="flex-grow: 1"></span>
+
+        <ul>
+          <li>
+            <a href="./index.html">HOME</a>
+          </li>
+          <li><a href="./plans.html">VIDEOS</a></li>
+          <li><a href="./plans.html">PUBMATS</a></li>
+          <li>
+            <a href="#" aria-haspopup="true">OTHER</a>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="bio.html">BIOLOGY</a></li>
+              <li><a href="EAPP.html">EAPP</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
