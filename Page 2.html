@@ -26,8 +26,8 @@
   }
   .page {
     margin: 0;
-    font-family: "Circular Std", sans-serif;
-    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
     background-image: url(./assets/background-2.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -60,6 +60,9 @@
     text-decoration: none;
   }
   h1 {
+    margin: 0;
+  }
+  .heading {
     margin: 0;
     text-align: center;
     font-size: 55px;
@@ -146,6 +149,38 @@
   a {
     text-decoration: none;
   }
+  .summary {
+    color: #fff7f1;
+    height: 100%;
+    padding: 80px;
+    background-color: #2798c4de;
+  }
+  .management {
+    color: #011459;
+    height: 100%;
+    padding: 80px;
+  }
+  .title {
+    transition: all 0.4s;
+    font-size: 6vmin;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  .title:hover {
+    transform: scale(1.05);
+  }
+  #logo {
+    animation: spin 3s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 </style>
 <body>
   <div class="page">
@@ -161,7 +196,7 @@
           </a>
           <div>
             <a href="index.html">
-              <h1>D.I.C.K.S Pro</h1>
+              <h1 class="heading">D.I.C.K.S Pro</h1>
               <h2>DIGITAL INFORMATION AND COMPUTER KNOWLEDGE SERVICE PRO</h2>
             </a>
           </div>
@@ -182,6 +217,81 @@
             </ul>
           </li>
         </ul>
+      </div>
+      <div class="summary" id="summary">
+        <h1 class="title">Executive Summary</h1>
+        <div style="align-items: center; text-align: justify">
+          <h4 style="font-weight: 200">
+            D.I.C.K.S. Pro is a digital service that involves community support
+            groups collaborating to provide an exceptional digital learning
+            environment for all. Through the inclusion of its diverse training
+            courses, D.I.C.K.S. Pro envisions digital citizens geared with
+            bonafide digital information and supporting computer knowledge,
+            complementing steps towards the future of the digital world. Most
+            Filipinos have shifted from being company workers to freelancers as
+            data has revealed that 32% of freelancers claim that demand has
+            grown as a result of the COVID-19 epidemic, and the number of
+            full-time freelancers surged from 17% to 28% between 2014 and 2019.
+            Not only has the demand for freelancers increased, but consumption
+            habits have changed immensely, with 67% preferring e-commerce over
+            traditional forms of purchasing. With the development of online
+            sales and commercial activity, individuals have been enticed to
+            attempt an online business that is now renowned, and which is why
+            many companies have opted to hire employees who can market their
+            products on social media. Hence how we founded our company and chose
+            our five (5) training courses.
+
+            <br /><br />
+            We are receptive to exploring prospective profit-making hobbies at
+            this age since we are at home with technological resources. Opening
+            up additional job/freelance options for individuals who are eager to
+            learn and advance with technology trends would be the first step.
+            Learning and improving abilities might be a viable method to earn
+            money. With this, our team created a service that teaches internet
+            and computer technology intricacies in simple ways. D.I.C.K.S. Pro
+            will be home-based and our team will use social media, specifically
+            our Facebook page, to advertise the courses we will offer. Customers
+            will simply submit a message on our page if they have any questions
+            or want to subscribe to our training courses. The instruction would
+            be delivered through exclusive video lessons to which only
+            subscribers would have access. And as what our company aims, our
+            service will be available to people of all ages as here at D.I.C.K.S
+            Pro, learning has no barriers.
+
+            <br /><br />
+            Evidently, D.I.C.K.S. Pro includes a variety of competitive elements
+            that may undoubtedly provide Filipinos with a one-of-a-kind learning
+            experience. With its exact and comprehensive course offerings, the
+            price of the size of its services is based on the notion of
+            affordability in order to connect with more people and accomplish
+            D.I.C.K.S. Pro's goals and objectives. The company's initial
+            capitalization is Php 9700, with non-recurring licenses/permits.
+          </h4>
+        </div>
+      </div>
+      <div class="management" id="management">
+        <h1 class="title" style="text-align: center">
+          Management and Organization
+        </h1>
+        <img
+          src="./assets/logo.png"
+          height="200px"
+          width="200px"
+          style="margin-top: 32px; margin-bottom: 32px; border-radius: 50%; align-items: center;"
+          id="logo"
+        >
+        <div style="align-items: center; text-align: justify">
+          <h4 style="font-weight: 200">
+            <br /><br />
+            Evidently, D.I.C.K.S. Pro includes a variety of competitive elements
+            that may undoubtedly provide Filipinos with a one-of-a-kind learning
+            experience. With its exact and comprehensive course offerings, the
+            price of the size of its services is based on the notion of
+            affordability in order to connect with more people and accomplish
+            D.I.C.K.S. Pro's goals and objectives. The company's initial
+            capitalization is Php 9700, with non-recurring licenses/permits.
+          </h4>
+        </div>
       </div>
     </div>
   </div>
