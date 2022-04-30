@@ -94,7 +94,7 @@
     text-align: center;
   }
 
-  li {
+  .list {
     color: #fff;
     background: transparent;
     display: block;
@@ -106,21 +106,21 @@
     width: 120px;
   }
 
-  li a {
+  .list a {
     color: #fff7f1;
   }
 
-  li:hover,
-  li:focus-within {
+  .list:hover,
+  .list:focus-within {
     background: #2798c4de;
     cursor: pointer;
   }
 
-  li:focus-within a {
+  .list:focus-within a {
     outline: none;
   }
 
-  ul li ul {
+  ul .list ul {
     background: #2b292b;
     visibility: hidden;
     opacity: 0;
@@ -133,16 +133,16 @@
     width: 100%;
   }
 
-  ul li:hover > ul,
-  ul li:focus-within > ul,
-  ul li ul:hover,
-  ul li ul:focus {
+  ul .list:hover > ul,
+  ul .list:focus-within > ul,
+  ul .list ul:hover,
+  ul .list ul:focus {
     visibility: visible;
     opacity: 1;
     display: block;
   }
 
-  ul li ul li {
+  ul .list ul .list {
     clear: both;
   }
 
@@ -165,7 +165,7 @@
     padding-bottom: 160px;
     padding-left: 100px;
     padding-right: 100px;
-    height: 75vh;
+    height: 200vh;
     background-color: #fff;
   }
   .title {
@@ -195,6 +195,16 @@
     font-size: 20px;
     font-weight: 500;
   }
+  .unordered {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 27px;
+    color: #011459;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-style: dashed;
+  }
 </style>
 <body>
   <div class="page">
@@ -218,16 +228,16 @@
         <span style="flex-grow: 1"></span>
 
         <ul style="font-family: 'Montserrat', sans-serif; font-weight: 200">
-          <li>
+          <li class="list">
             <a href="./index.html">HOME</a>
           </li>
-          <li><a href="./plans.html">VIDEOS</a></li>
-          <li><a href="./plans.html">PUBMATS</a></li>
-          <li>
+          <li class="list"><a href="./plans.html">VIDEOS</a></li>
+          <li class="list"><a href="./plans.html">PUBMATS</a></li>
+          <li class="list">
             <a href="#" aria-haspopup="true">OTHER</a>
             <ul class="dropdown" aria-label="submenu">
-              <li><a href="bio.html">BIOLOGY</a></li>
-              <li><a href="EAPP.html">EAPP</a></li>
+              <li class="list"><a href="bio.html">BIOLOGY</a></li>
+              <li class="list"><a href="EAPP.html">EAPP</a></li>
             </ul>
           </li>
         </ul>
@@ -388,6 +398,55 @@
               </p>
             </div>
           </div>
+        </div>
+        <div style="align-items: center; text-align: justify">
+          <h3
+            style="
+              font-family: 'Montserrat', sans-serif;
+              text-align: center;
+              font-size: 30px;
+              color: #011459;
+              margin-top: 20px;
+              margin-bottom: 10px;
+            "
+          >
+            Key Personnel:
+          </h3>
+          <p
+            style="
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 300;
+              text-align: center;
+              font-size: 27px;
+              color: #011459;
+              margin-top: 20px;
+              margin-bottom: 10px;
+            "
+          >
+            Chief Executive Officer
+          </p>
+        </div>
+        <div style="align-items: center; text-align: justify">
+          <h3
+            style="
+              font-family: 'Montserrat', sans-serif;
+              text-align: center;
+              font-size: 30px;
+              color: #011459;
+              margin-top: 20px;
+              margin-bottom: 10px;
+            "
+          >
+            Workforce and Support Personnel:
+          </h3>
+          <ul
+            class="unordered"
+          >
+            <li>Finance Team</li>
+            <li>Human Resources and Production Team</li>
+            <li>Marketing and Sales Team</li>
+            <li>Public Relations Officer</li>
+          </ul>
         </div>
       </div>
     </div>
