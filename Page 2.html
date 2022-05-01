@@ -166,6 +166,14 @@
     padding: 80px;
     background-color: #2798c4de;
   }
+  .marketplan {
+    color: #ffffff;
+    height: 100%;
+    padding: 80px;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background-color: #2798c4de;
+  }
   .management {
     color: #011459;
     display: flex;
@@ -278,6 +286,56 @@
   .productslist {
     font-size: 30px;
     font-weight: 500;
+  }
+  /* TABLE PLAN */
+  .plantable {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 60%;
+  }
+
+  .plantable td {
+    font-family: "Montserrat", sans-serif;
+    border: solid 1px black;
+    word-wrap: break-word;
+    padding: 5px;
+    vertical-align: top;
+    background-color: #2798c4de;
+  }
+
+  .plantable td.header1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #011459;
+    color: white;
+  }
+
+  .plantable.center {
+    text-align: center;
+  }
+
+  .plantable td {
+    border: 2px solid #011459;
+    transition: all 0.5s;
+  }
+
+  .plantable td:hover {
+    color: #fff7f1;
+    background-color: #011459;
+  }
+
+  .strats td {
+    transition: all 0.5s;
+    padding: 32px;
+  }
+
+  .strats td:hover {
+    transform: scale(1.1);
+    border-radius: 28px;
+    background: linear-gradient(145deg, #f74049, #f74049);
+    box-shadow: 10px 10px 36px #f74049, -10px -10px 36px #f74049;
+    color: #fff7f1;
   }
 </style>
 <body>
@@ -1022,6 +1080,114 @@
             also be done to be able to fully begin the operation.
           </p>
         </ol>
+      </div>
+      <div class="management"><h1 class="title">Market Plan</h1></div>
+      <div
+        style="
+          margin: 0;
+          font-family: 'Circular Std', sans-serif;
+          height: 100%;
+          background-image: url(./assets/background-3.png);
+          background-size: cover;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="marketplan">
+          <h1 class="title">Financial Plan</h1>
+          <h3
+            style="
+              font-family: 'Montserrat', sans-serif;
+              text-align: left;
+              font-size: 30px;
+              color: #ffffff;
+              margin-top: 20px;
+              margin-bottom: 10px;
+            "
+          >
+            Startup Summary
+          </h3>
+          <p
+            style="
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 200;
+              text-align: justify;
+              font-size: 27px;
+              color: #ffffff;
+            "
+          >
+            To start the financing of DICKS Pro, it must be duly noted that the
+            operation of the business and its offered services rely upon the
+            labor efforts and the equipment used by the team. Due to this, labor
+            fees that are associated with the mentoring of its bundled services
+            are nulled and devices to be used are provided. In any way, provided
+            herein is the startup summary of DICKS Pro to instigate its tutorial
+            services, with the inclusion of its estimated 1-year expenditures
+            during operation:
+          </p>
+          <br />
+          <table align="center" width="100%" class="plantable">
+            <tr>
+              <td class="header1" colspan="3">
+                <b>START-UP SUMMARY</b>
+              </td>
+            </tr>
+            <tr style="font-weight: 500; text-align: center">
+              <td>Expenses</td>
+              <td>Costs</td>
+              <td>1-year</td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  font-weight: 500;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                "
+              >
+                Maintenance Cost per Month
+              </td>
+              <td style="padding-left: 10px; padding-right: 10px">600</td>
+              <td style="padding-left: 10px; padding-right: 10px">7200</td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  font-weight: 500;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                "
+              >
+                Permits/Licenses/Documents (estimated, non-recurring, excluding
+                renewals)
+              </td>
+              <td style="padding-left: 10px; padding-right: 10px">2500</td>
+              <td style="padding-left: 10px; padding-right: 10px">2500</td>
+            </tr>
+
+            <tr>
+              <td
+                style="
+                  font-weight: 500;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                "
+              >
+                <b>Total:</b>
+              </td>
+              <td>&nbsp;</td>
+              <td
+                style="
+                  font-weight: 500;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                "
+              >
+                <b>9700</b>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
