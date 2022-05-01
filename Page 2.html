@@ -149,8 +149,13 @@
   a {
     text-decoration: none;
   }
+  .plans {
+    color: #ffffff;
+    height: 100%;
+    padding: 80px;
+  }
   .summary {
-    color: #fff7f1;
+    color: #ffffff;
     height: 100%;
     padding: 80px;
     background-color: #2798c4de;
@@ -162,7 +167,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     padding-left: 100px;
     padding-right: 100px;
     height: 100%;
@@ -204,6 +209,61 @@
     padding: 20px;
     margin-bottom: 10px;
     border-style: dashed;
+  }
+  .unordered1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 27px;
+    color: #ffffff;
+    width: 40vw;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-style: solid;
+  }
+  /* UNORDERED LIST MOD */
+  .unordered2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    color: #ffffff;
+    text-align: left;
+
+    margin-left: 40px;
+  }
+  ul {
+    margin: 0;
+  }
+  ul.unordered2 {
+    list-style-type: none;
+  }
+  ul.unordered2 > li {
+    text-indent: -5px;
+  }
+  ul.unordered2 > li:before {
+    content: "-  ";
+    text-indent: -5px;
+  }
+  /*OTHER*/
+  .suborder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 27px;
+    color: #ffffff;
+    list-style-type: circle;
+    margin-left: 40px;
+  }
+  .orderedlist {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .productslist {
+    font-size: 30px;
+    font-weight: 500;
   }
 </style>
 <body>
@@ -630,7 +690,6 @@
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 200;
                 text-align: center;
-
                 font-size: 23px;
                 color: #011459;
               "
@@ -640,6 +699,92 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="plans">
+        <h1 class="title">Product/Service Plan</h1>
+
+        <ol class="orderedlist">
+          <li class="productslist">Purpose of the Product/Service</li>
+          <p
+            style="
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 200;
+              text-align: justify;
+              font-size: 23px;
+              color: #ffffff;
+            "
+          >
+            D.I.C.K.S. Pro aims to bridge information gaps with no boundaries in
+            terms of digital knowledge. Assist people with an interest in diving
+            into the technological market. The company envisions a learning
+            community that has equal digital knowledge regardless of age,
+            background, abilities, occupations, and position. Creating a
+            peaceful society in which we learn not just from courses but also
+            through interactions.
+          </p>
+          <li class="productslist">Service’s Unique Features</li>
+          <p
+            style="
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 200;
+              text-align: justify;
+              font-size: 23px;
+              color: #ffffff;
+            "
+          >
+            With the several digital competitors in today’s society, D.I.C.K.S.
+            Pro offers its utmost service through dedication, time, effort, and
+            knowledge. Real-time focus on the customers’ needs and technological
+            queries. Assistance in learning and preparation of skills in the
+            technical field. Here at D.I.C.K.S Pro, learning has no barriers.
+          </p>
+          <li class="productslist">
+            Material Requirements and Sources of Supply
+          </li>
+          <p
+            style="
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 200;
+              text-align: justify;
+              font-size: 23px;
+              color: #ffffff;
+            "
+          >
+            List of Materials needed for the company to operate:
+          </p>
+          <ul class="unordered1">
+            <li>PC/Laptop/Smartphone</li>
+            <li>Internet</li>
+            <li>Editing Software</li>
+            <li>Microsoft Excel for Accounting Management</li>
+            <li>
+              Social Media Applications
+              <ul class="suborder">
+                <li>Facebook</li>
+                <li>Discord</li>
+              </ul>
+            </li>
+          </ul>
+          <li class="productslist">
+            Process and equipment that will be used to manufacture the
+            product/render the service
+          </li>
+          <p
+            style="
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 200;
+              text-align: justify;
+              font-size: 23px;
+              color: #ffffff;
+              margin-bottom: 0;
+            "
+          >
+            Creation of Learning Materials
+          </p>
+          <ul class="unordered2">
+            <li>Materials to be used during live training</li>
+          </ul>
+        </ol>
       </div>
     </div>
   </div>
